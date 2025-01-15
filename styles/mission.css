@@ -8,9 +8,12 @@
   font-family: "Poppins", serif;
 }
 /* global styles */
+.special {
+  color: rgba(255, 173, 90, 1);
+}
 main {
   margin: 0 150px;
-  padding: 50px 0;
+  /* padding: 50px 0; */
 }
 h1 {
   font-family: "Yeseva One", serif;
@@ -29,7 +32,9 @@ h4 {
 p {
   font-size: 18px;
 }
-
+section {
+  margin: 50px;
+}
 /* banner section */
 .banner-container {
   display: flex;
@@ -70,9 +75,49 @@ p {
 .banner-container small {
   display: block;
 }
-
+/* mission section */
+.mission-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.mission-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.mission-card {
+  padding: 25px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: red;
+  border-radius: 25px;
+}
+.mission-card img {
+  width: 140px;
+  height: 140px;
+}
+.mission-card p {
+  font-size: 16px;
+}
+.mission-card:nth-child(1) {
+  background-color: rgba(79, 157, 166, 0.1);
+}
+.mission-card:nth-child(2) {
+  background-color: rgba(255, 89, 89, 0.1);
+}
+.mission-card:nth-child(3) {
+  background-color: rgba(255, 244, 214, 1);
+}
 /* mobile responsive */
 @media screen and (max-width: 576px) {
+  section {
+    margin: 0;
+  }
   h1 {
     font-family: "Yeseva One", serif;
     font-size: 40px;
@@ -99,9 +144,15 @@ p {
   .banner-image img {
     margin: -50px;
   }
+  .mission-cards {
+    flex-wrap: wrap;
+  }
 }
 /* tablet responsive */
 @media screen and (min-width: 577px) and (max-width: 992px) {
+  section {
+    margin: 0;
+  }
   main {
     margin: 0;
     padding: 20px;
@@ -119,5 +170,8 @@ p {
   }
   .banner-image img {
     margin: -50px;
+  }
+  .mission-cards {
+    flex-wrap: wrap;
   }
 }
