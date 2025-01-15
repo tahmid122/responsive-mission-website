@@ -216,6 +216,18 @@ section {
   bottom: 25%;
   z-index: -1;
 }
+footer {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 200px;
+  color: white;
+  background-color: black;
+}
 /* mobile responsive */
 @media screen and (max-width: 576px) {
   section {
